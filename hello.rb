@@ -126,3 +126,7 @@ for i in 1..8 do
 end
 
 for i in 1..8 do puts i end
+
+5.upto(10) do
+    puts "hello"
+end
