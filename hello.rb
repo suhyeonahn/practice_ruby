@@ -69,3 +69,60 @@ result = case score
 end
 
 puts result
+
+# if statement
+customerName = "Fred"
+if customerName == "Fred" then print "Hello Fred!"
+elsif customerName == "John" then print "Hello John!" 
+elsif customername == "Robert" then print "Hello Bob!"
+end
+
+car = "Patriot"
+
+manufacturer = case car
+   when "Focus" then "Ford"
+   when "Navigator" then "Lincoln"
+   when "Camry" then "Toyota"
+   when "Civic" then "Honda"
+   when "Patriot" then "Jeep"
+   when "Jetta" then "VW"
+   when "Ceyene" then "Porsche"
+   when "Outback" then "Subaru"
+   when "520i" then "BMW"
+   when "Tundra" then "Nissan"
+   else "Unknown"
+end
+
+puts "The " + car  + " is made by "  + manufacturer
+
+score = 70
+
+result = case score
+   when 0..40 then "Fail"
+   when 41..60 then "Pass"
+   when 61..70 then "Pass with Merit"
+   when 71..100 then "Pass with Distinction"
+   else "Invalid Score"
+end
+
+puts result
+
+i = 0
+while i < 5
+   puts i
+   i += 1
+   break if i == 2
+end
+
+i = 0
+until i == 5
+   puts i
+   i += 1
+end
+
+# loop
+for i in 1..8 do
+    puts i
+end
+
+for i in 1..8 do puts i end
